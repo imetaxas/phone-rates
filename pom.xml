@@ -101,14 +101,14 @@
 							<warName>ROOT</warName>
 						</configuration>
 					</plugin>
-					<plugin>
+					<!--<plugin>
 						<artifactId>maven-war-plugin</artifactId>
 						<version>3.0.0</version>
 						<configuration>
 							<webXml>src/main/webapp/WEB-INF/web.xml</webXml>
 							<outputDirectory>C:\apache-tomcat-9.0.0.M18\webapps</outputDirectory>
 						</configuration>
-					</plugin>
+					</plugin>-->
 				</plugins>
 			</build>
 		</profile>
