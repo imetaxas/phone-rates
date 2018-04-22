@@ -1,0 +1,85 @@
+{
+  "fromCountry":"SE",
+  "toCountry":"IN",
+  "paygCallRates":{
+    "landline":[
+      {
+        "breakOut":"Fixed",
+        "minuteRate":{
+          "amountWithVAT":0.0175,
+          "formattedAmountWithVAT":"0,018 €",
+          "amount":0.0175,
+          "formattedAmount":"0,018 €"
+        },
+        "resourceKey":""
+      }
+    ],
+    "mobile":[
+      {
+        "breakOut":"Mobile",
+        "minuteRate":{
+          "amountWithVAT":0.0175,
+          "formattedAmountWithVAT":"0,018 €",
+          "amount":0.0175,
+          "formattedAmount":"0,018 €"
+        },
+        "resourceKey":""
+      }
+    ]
+  },
+  "buckets":[
+    {
+      "productId":8509,
+      "productType":"unlimited",
+      "productName":"India Unlimited 30 days",
+      "bucketId":50509,
+      "bucketName":"Pay_IndiaUnlimitedDiscount",
+      "minuteRate":{
+        "amountWithVAT":0.00062500,
+        "formattedAmountWithVAT":"0,001 €",
+        "amount":0.0005,
+        "formattedAmount":"0,001 €"
+      },
+      "validityDays":7,
+      "minutes":20000,
+      "price":10.0,
+      "priceWithVat":12.5,
+      "formattedPrice":"10 €",
+      "formattedPriceWithVat":"12,50 €",
+      "discount":{
+        "description":"One week free trial",
+        "discountRate":"100.0%",
+        "numberOfDays":7
+      }
+    }
+  ],
+  "currencyId":"EUR",
+  "currencyName":"Euro",
+  "currencyNameShort":"€",
+  "centName":"c",
+  "vatPercent":0.25,
+  "rebin":{
+    "productName":"Rebel Calling",
+    "price":{
+      "amountWithVAT":1.25000000,
+      "formattedAmountWithVAT":"1,25 €",
+      "amount":1.0000,
+      "formattedAmount":"1 €"
+    },
+    "available":false
+  },
+  "cheapestPaygoRate":{
+    "mobile":{
+      "amountWithVAT":0.0175,
+      "formattedAmountWithVAT":"0,018 €",
+      "amount":0.0175,
+      "formattedAmount":"0,018 €"
+    },
+    "landline":{
+      "amountWithVAT":0.0175,
+      "formattedAmountWithVAT":"0,018 €",
+      "amount":0.0175,
+      "formattedAmount":"0,018 €"
+    }
+  }
+}

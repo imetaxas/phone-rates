@@ -1,0 +1,204 @@
+body {
+  margin: 1em;
+}
+
+table {
+  width: 100%;
+  border-spacing: 3px;
+  border-collapse: separate;
+}
+
+.check {
+  color: #e20074;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 640px) {
+  .check {
+    font-size: inherit;
+  }
+}
+
+th:first-child,
+td:first-child {
+  color: white;
+  font-weight: bold;
+  //background: #86c72a;
+}
+
+th,
+td {
+  padding: .75em;
+  text-align: center;
+  background: white;
+  border: solid 1px #ccc;
+  width: 20%;
+}
+
+@media screen and (max-width: 640px) {
+  thead {
+     display: none;
+  }
+
+  td {
+    display: block;
+    position: relative;
+    padding-left: 50%;
+    margin-bottom: 3px;
+    text-align: right;
+    width: auto;
+
+    &:first-child:before {
+      font-weight: bold;
+    }
+
+    &:first-child {
+      padding-left: 0%;
+      text-align: center;
+    }
+
+    &:before {
+      content: attr(data-th);
+      position: absolute;
+      top: .75em;
+      left: .75em;
+      width: 55%;
+      font-weight: inherit;
+      text-align: left;
+    }
+  }
+}
+
+
+// Currency exchanger
+.wrapper {
+  width: 30%;
+  margin: 0 auto;
+  position: relative;
+  background: #222;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: auto;
+  }
+}
+
+.instructions {
+  width: 100%;
+  height: 10px;
+  color: white;
+  text-align: center;
+}
+
+input {
+  width: 99%;
+  text-align: center;
+  font-size: 25px;
+}
+
+input:focus {
+  border: 1px solid #f1e85b
+}
+
+.currencies {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  max-height: 50px;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  z-index: 10;
+  width: 30%;
+}
+
+.currencies li {
+  height: 40px;
+  background: #4162a9;
+  margin-bottom: 5px;
+  line-height: 40px;
+  text-align: center;
+  padding: 5px;
+  color: #f5fcd0;
+  cursor: pointer;
+  height: 35px;
+}
+
+.currencies li:hover {
+  background: #ee3b37;
+}
+
+.open {
+  max-height: 600px;
+}
+
+.results {
+  float: left;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #222;
+}
+
+.results li {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background: rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  font-size: 25px;
+  color: #f5fcd0;
+}
+
+.name,
+.iso,
+.result {
+  width: 33.33%;
+  float: left;
+  text-align: center;
+  color: #f5fcd0;
+}
+
+.hide {
+  display: none;
+}
+
+.yahoo {
+  text-align: center;
+}
+
+// Currency exchanger End
+
+.menu-button {
+    width: 1.5em;
+    height: 1.5em;
+    border: none;
+    border-radius: 50%;
+    background-color: #c2185b;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.invisible {
+  display: none;
+}
+
+.loader {
+  position: fixed;
+  z-index: 999;
+  height: 2em;
+  width: 2em;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
